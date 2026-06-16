@@ -1,24 +1,35 @@
-@include('lib.daeangdaeang')
-@include('main_header')
-<div class="main-wrap">
+@include('inc.main_header')
+<div id="container">
 	<div class="main-visual">
 		<h1 class="pt-50 pb-20">댕댕닷컴에서 <strong>반려견 정보</strong>를 찾고계신가요?</h1>
 	</div>
 	<div class="main-search-wrap">
 		<nav>
 			<ul>
+				<a href="{{ url('/dogdict') }}">
 				<div class="main-menu-item">
-					<li class="radius-10"></li>
-					<p class="text-center">견종백과</p>
+					<li class="radius-10 dogdict"></li>
+					<p class="text-center">애견사전</p>
 				</div>
+				</a>
+				<a href="{{ url('/dogmarket') }}">
 				<div class="main-menu-item">
-					<li class="radius-10"></li>
-					<p class="text-center">동네업체</p>
-				</div>
+					<li class="radius-10 dogmarket"></li>
+					<p class="text-center">애견용품</p>
+				</div>		
+				</a>
+				<a href="{{ url('/companyinfo') }}">
 				<div class="main-menu-item">
-					<li class="radius-10"></li>
-					<p class="text-center">생활정보</p>
+					<li class="radius-10 dogshop"></li>
+					<p class="text-center">업체정보</p>
 				</div>
+				</a>
+				<a href="{{ url('/community') }}">
+				<div class="main-menu-item">
+					<li class="radius-10 community"></li>
+					<p class="text-center">커뮤니티</p>
+				</div>		
+				</a>
 			</ul>
 		</nav>
 		<div class="main-search">
@@ -31,8 +42,7 @@
 					</form>
 				</fieldset>
 			</ul>
-			<p class="">인기 검색어 : </p>
 		</div>
 	</div>
 </div>
-@include('footer')
+@include('inc.footer')

@@ -19,12 +19,13 @@
 			@endif
 			<h1>관리자 로그인</h1>
 			<fieldset id="login">
-			<form method="POST" action="{{ route('admin.login.submit') }}">
+			<form method="POST" action="{{ route('admin.login.post') }}">
+			    @csrf   <!-- 이거 추가! -->
 				<div class="form-group">
-					<input class="login-form" type="text" name="admin_id" placeholder="관리자 아이디" required autofocus value="{{ old('admin_id') }}">
+					<input class="login-form" type="text" name="email" placeholder="관리자 이메일" required autofocus>
 				</div>
                 <div class="form-group">
-				    <input class="login-form" type="password" name="admin_pw" placeholder="비밀번호" required>
+				    <input class="login-form" type="password" name="password" placeholder="비밀번호" required>
 		        </div>
 				<button type="submit" class="btn-login">로그인</button>
 			</form>
