@@ -1,0 +1,312 @@
+/* reset */ 
+@charset "utf-8";
+@import url('https://googleapis.com');
+html {overflow-y:scroll}
+body { margin:0; padding:0;
+	font-size:14px;
+    font-family: -apple-system,BlinkMacSystemFont,Pretendard Variable,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    overflow-wrap: break-word;
+}
+body.dogdict { margin:0; padding:0;
+	font-size:14px;	
+    font-family: -apple-system,BlinkMacSystemFont,Pretendard Variable,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    overflow-wrap: break-word;
+	background-color:#f2f4f7;
+}
+a {color:#000;text-decoration:none;}
+*, :after, :before {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+input[type=text],input[type=password], textarea {
+outline:none;
+}
+button { background:transparent; border:0; }
+legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+fieldset { border:0; margin:0; padding:0; }
+li { list-style:none; margin:0; padding:0; border:0; 
+    font-family: -apple-system,BlinkMacSystemFont,Pretendard Variable,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    overflow-wrap: break-word;
+}
+ul { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0; border:0; 
+    font-family: -apple-system,BlinkMacSystemFont,Pretendard Variable,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    overflow-wrap: break-word;
+}
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.d-flex { display: flex; }
+.d-block { display: block; }
+.d-none { display: none; }
+
+.gap-8 { gap: 8px; }
+.gap-10 { gap: 10px; }
+.gap-12 { gap: 12px; }
+.gap-16 { gap: 16px; }
+.gap-20 { gap: 20px; }
+.gap-24 { gap: 24px; }
+
+.mt-0 { margin-top: 0; }
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mt-32 { margin-top: 32px; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-8 { margin-bottom: 8px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-24 { margin-bottom: 24px; }
+.mb-32 { margin-bottom: 32px; }
+
+.p-0 { padding: 0; }
+.p-8 { padding: 8px; }
+.p-16 { padding: 16px; }
+.p-20 { padding: 20px; }
+.p-24 { padding: 24px; }
+
+.pt-10 { padding-top:10px; }
+.pt-20 { padding-top:20px; }
+.pt-30 { padding-top:30px; }
+.pt-40 { padding-top:40px; }
+.pt-50 { padding-top:50px; }
+.pt-60 { padding-top:60px; }
+.pt-70 { padding-top:70px; }
+.pt-80 { padding-top:80px; }
+.pt-90 { padding-top:90px; }
+
+.pb-10 { padding-bottom:10px; }
+.pb-20 { padding-bottom:20px; }
+.pb-30 { padding-bottom:30px; }
+.pb-40 { padding-bottom:40px; }
+.pb-50 { padding-bottom:50px; }
+.pb-60 { padding-bottom:60px; }
+.pb-70 { padding-bottom:70px; }
+.pb-80 { padding-bottom:80px; }
+.pb-90 { padding-bottom:90px; }
+
+.pl-10 { padding-left:10px; }
+.pl-20 { padding-left:20px; }
+.pl-30 { padding-left:30px; }
+.pl-40 { padding-left:40px; }
+.pl-50 { padding-left:50px; }
+.pl-60 { padding-left:60px; }
+.pl-70 { padding-left:70px; }
+.pl-80 { padding-left:80px; }
+.pl-90 { padding-left:90px; }
+
+.pr-10 { padding-right:10px; }
+.pr-20 { padding-right:20px; }
+.pr-30 { padding-right:30px; }
+.pr-40 { padding-right:40px; }
+.pr-50 { padding-right:50px; }
+.pr-60 { padding-right:60px; }
+.pr-70 { padding-right:70px; }
+.pr-80 { padding-right:80px; }
+.pr-90 { padding-right:90px; }
+
+.radius-5 { border-radius:5px; }
+.radius-10 { border-radius:10px; }
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+
+@media (min-width: 1024px) {
+
+#dogdict-wrap {  }
+#dogdict-wrap header { border-bottom:1px solid #ddd; background:#fff;  }
+#dogdict-wrap header ul { display:flex; justify-content: space-between; width:1240px; height:80px; line-height:72px; margin-left:auto; margin-right:auto;  } 
+#dogdict-wrap header .char-logo { display:flex; align-items: center; height:70px; line-height:40px; }
+#dogdict-wrap header .char-logo img { width:40px; height:40px; }
+#dogdict-wrap header .char-logo h1 { font-size:24px; line-height:37px; padding-left:5px; }
+#dogdict-wrap header nav { display:flex; gap:40px; }
+#dogdict-wrap header nav li { font-size:16px; height:70px; }
+/* PC 격자 메뉴 */
+#dogdict-wrap header .member { position:relative; display:flex; align-items:center; gap:15px; height:70px; }
+#dogdict-wrap header .member .login-btn { line-height:normal;  }
+#dogdict-wrap header .menu-wrap { position:static; display:flex; align-items:center;  }
+#dogdict-wrap header .menu-dropdown { display:none; position:absolute; top:80px; right:0; width:280px; background:#fff; border:1px solid #dedede; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); z-index:9999; padding:14px; }
+#dogdict-wrap header .menu-btn { display:flex; align-items:center; cursor:pointer; }
+#dogdict-wrap header .menu-btn:hover { color:#2979e8; }
+#dogdict-wrap header .menu-dropdown.active { display:block; }
+#dogdict-wrap header .menu-icons {  }
+#dogdict-wrap header .menu-icon-item { display:flex; flex-direction:row; align-items:center; gap: 4px; padding:0; border-radius:8px; font-size:13px; color:#333; }
+#dogdict-wrap header .menu-icon-item h2 { font-size:13px; width:58px; padding:2px 0px; font-weight:400; }
+#dogdict-wrap header .menu-icon-item div.icon { padding:15px 0px 10px 0px; line-height:20px; margin-bottom:0px; text-align: center;  } 
+#dogdict-wrap header .menu-icon-item img { width:35px; height:35px; }
+#dogdict-wrap header .menu-icon-item div:hover { background:#f5f5f5; }
+#dogdict-wrap header .menu-links { display:grid; grid-template-columns:repeat(2,1fr); gap:6px; border-top:1px solid #eee; padding-top:10px; margin-bottom:10px; }
+#dogdict-wrap header .menu-links a { font-size:13px; color:#444; padding:0px 0; }
+#dogdict-wrap header .menu-links a:hover { color:#2979e8; }
+#dogdict-wrap header .menu-footer { border-top:1px solid #eee; padding-top:0px; text-align:center; }
+#dogdict-wrap header .menu-footer li { height:60px; }
+#dogdict-wrap header .menu-footer a { font-size:13px; color:#555; }
+#dogdict-wrap header .menu-footer a:hover { color:#2979e8; }
+
+/* 모바일 햄버거 - PC에서 숨김 */
+.dogdict-hamburger-btn { display:none; }
+.dogdict-drawer { display:none; }
+
+#dogdict-container { width:1240px; min-height:600px; margin-left:auto; margin-right:auto; text-align:center; margin-top:40px; } 
+
+.dogdict-list-wrap { background:#fff; padding:30px; border-radius:30px; }
+.dogdict-list-wrap h2 { border-bottom:1px solid #ddd; padding-bottom:20px; margin-bottom:40px; text-align:left; }
+
+.search-inner { padding-top:30px; width:100%; text-align:left; background:#fff; margin-top:30px; border-radius:30px; padding:30px; }
+.search-inner h2 { margin-bottom:30px; border-bottom:1px solid #ddd; padding-top:15px; padding-bottom:15px; }
+.search-inner img { width:400px; height:300px; }
+.search-inner p { word-break:normal; }
+
+.dog-item { display:flex; gap:20px; padding:20px 0;  }
+.dog-item img { width:500px; height:350px; object-fit:cover; border-radius:8px; flex-shrink:0; }
+.dog-info h3 { font-size:18px; margin-bottom:10px;  }
+.dog-info p { font-size:14px; line-height:1.8; color:#444; }
+.dog-card { text-align:left; border-bottom:1px solid #ddd; line-height:40px;  }
+.dog-card:hover { background-color: #eaf3ff;  }
+.dog-card span { padding-left:10px; } 
+
+.dogdict-search { width:100%; height:500px; display:flex; flex-direction: column; justify-content:center;   }
+.dogdict-search fieldset { margin:0; padding:0;  }
+.dogdict-search input.keysearch { width:70%; height:55px; border-radius:30px; margin-top:20px; border:1px solid #ddd; box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+padding:0px 0px 0px 25px; }
+.dogdict-search button { position:relative; right:65px; top:3px; font-size:20px; cursor:pointer; }
+.dogdict-search .popular { margin-top:30px; }
+.dogdict-search .popular ul { display:flex; justify-content: center;  gap:5px; }
+.dogdict-search h2 { font-size:14px; margin-right:10px; padding-top:13px; }
+.dogdict-search .popular span { border:1px solid #5b9efe; padding:12px 15px 12px 15px; margin-right:10px; border-radius:35px; cursor:pointer; }
+.dogdict-search .popular span:hover { background-color: #eaf3ff; }
+.copyright { text-align:center; padding-top:30px; padding-bottom:30px; }
+.nav-mobile { display:none; }
+
+/* 페이지네이션 */
+div.navigation { width:100%; margin-top:50px; margin-bottom:50px; display:flex; justify-content:center; }
+div.navigation div.inner { display:flex; align-items:center; border-top:1px solid #dedede; border-bottom:1px solid #dedede; border-left:1px solid #dedede; }
+div.navigation div.inner > * { display:flex; align-items:center; justify-content:center; height:36px; min-width:36px; padding:0 10px; border-right:1px solid #dedede; font-size:14px; background-color:#fff; color:#333; }
+div.navigation div.inner > span[aria-current="page"] { padding:0; }
+div.navigation svg { width:16px; height:16px; }
+div.navigation span[aria-current="page"] > span { display:flex; align-items:center; justify-content:center; width:100%; height:100%; background-color:#0b57d0; color:#fff; font-weight:500; }
+div.navigation a:hover { background-color:#eaf3ff; }
+}
+
+/* 모바일 */
+@media (max-width: 1024px) {
+body.dogdict { margin:0; padding:0;
+	font-size:14px;	
+    font-family: -apple-system,BlinkMacSystemFont,Pretendard Variable,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    overflow-wrap: break-word;
+	background-color:#fff;
+}
+
+
+header { border-bottom:1px solid #ddd; background:#fff;  }
+header ul { display:flex; justify-content: space-between; width:100%; height:75px; line-height:72px; margin-left:auto; margin-right:auto;  } 
+header .char-logo { display:flex; align-items: center; height:70px; margin-left:10px; }
+header .char-logo img { width:40px; height:40px; }
+header .char-logo h1 { font-size:24px; line-height:37px; padding-left:5px; }
+header nav { display:flex; gap:40px; display:none; }
+header nav li { font-size:16px; }
+header .member { display:flex; align-items: center; height:72px; margin-right:10px; }
+header .member li { background:#fff; border:1px solid #dedede; width:60px; height:30px; line-height:28px; text-align:center; color:#777; margin-right:10px; }
+
+/* PC 메뉴 숨김 */
+#dogdict-wrap header nav { display:none; }
+#dogdict-wrap header .menu-wrap { display:none; }
+#dogdict-wrap header .login-btn { display:none; }
+
+/* 햄버거 버튼 */
+.dogdict-hamburger-btn { display:flex; flex-direction:column; justify-content:center; gap:5px; background:none; border:none; cursor:pointer; padding:4px; width:30px; height:30px; position:relative; top:-3px; z-index:999999; }
+.dogdict-hamburger-btn span { display:block; width:22px; height:2px; background:#333; border-radius:2px; transition:all .4s cubic-bezier(0.4,0,0.2,1); transform-origin:center; position:absolute; left:4px; }
+.dogdict-hamburger-btn span:nth-child(1) { top:7px; }
+.dogdict-hamburger-btn span:nth-child(2) { top:14px; }
+.dogdict-hamburger-btn span:nth-child(3) { top:21px; }
+.dogdict-hamburger-btn.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+.dogdict-hamburger-btn.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+.dogdict-hamburger-btn.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+
+/* 오버레이 */
+.dogdict-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.4); z-index:9998; }
+
+/* 드로어 */
+.dogdict-drawer { padding-top:20px; position:fixed; top:-100vh; left:0; width:100%; height:100vh; background:#fff; z-index:9999; transition:top .3s ease; padding:0px; box-shadow:0 4px 12px rgba(0,0,0,0.1); overflow-y:auto; }
+.dogdict-drawer.open { top:0; }
+.dogdict-drawer .menu-logo { padding:11px 0px 0px 3px } 
+.dogdict-drawer .menu-logo img { height:35px; } 
+.drawer-nav li { border-bottom:1px solid #f0f0f0; }
+.drawer-nav li:last-child { border-bottom:none; }
+.drawer-nav li a { display:flex; justify-content:space-between; align-items:center; padding:14px 20px; font-size:16px; color:#111; text-decoration:none; }
+
+.drawer-member-btns { display:flex; gap:8px; padding:16px; border-bottom:1px solid #eee; margin-top:0px; }
+.drawer-member-btns a { flex:1; text-align:center; font-size:13px; padding:8px 0; border-radius:6px; text-decoration:none; }
+.drawer-member-btns i { position:relative; top:1px; }
+.drawer-member-btns .d-login  { border:1px solid #ddd; color:#111; }
+.drawer-member-btns .d-reg    { background:#aa7736; color:#fff; }
+.drawer-nav li a, .drawer-member-btns a { opacity:0; transform:translateY(10px); transition:opacity .6s ease, transform .6s ease; }
+.dogdict-drawer.open .drawer-nav li a, .dogdict-drawer.open .drawer-member-btns a { opacity:1; transform:translateY(0); }
+.dogdict-drawer.open .drawer-member-btns a:nth-child(1) { transition-delay:.2s; }
+.dogdict-drawer.open .drawer-member-btns a:nth-child(2) { transition-delay:.3s; }
+.dogdict-drawer.open .drawer-member-btns a:nth-child(3) { transition-delay:.4s; }
+.dogdict-drawer.open .drawer-nav li:nth-child(1) a { transition-delay:.3s; }
+.dogdict-drawer.open .drawer-nav li:nth-child(2) a { transition-delay:.4s; }
+.dogdict-drawer.open .drawer-nav li:nth-child(3) a { transition-delay:.5s; }
+.dogdict-drawer.open .drawer-nav li:nth-child(4) a { transition-delay:.6s; }
+.dogdict-drawer.open .drawer-nav li:nth-child(5) a { transition-delay:.7s; }
+.dogdict-drawer.open .drawer-nav li:nth-child(6) a { transition-delay:.8s; }
+.drawer-footer { padding:28px; }
+
+
+.nav-mobile { height:45px; line-height:45px; background:#fff; border-bottom:1px solid #eee; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; width: 100%; box-shadow: 0px 2px 13px 0px rgba(31, 31, 31, 0.08); }
+.nav-mobile::-webkit-scrollbar { display: none; }
+.nav-mobile ul { display:flex; gap:18px; white-space: nowrap; padding: 0 15px;  }
+.nav-mobile li { flex-shrink: 0; }
+
+#dogdict-container { width:100%; min-height:375px; margin-left:auto; margin-right:auto; text-align:center; } 
+
+
+
+.search-inner { padding-top:40px; background:#fff; }
+.search-inner img { width:100%;  } 
+.search-inner h2 { margin-bottom:20px; border-bottom:1px solid #ddd; padding-bottom:20px; } 
+.dog-info p { padding:15px; font-size:14px; line-height:1.8; color:#444; }
+
+.dogdict-list-wrap {  }
+.dogdict-list-wrap h2 { border-bottom:1px solid #ddd; padding-bottom:20px; margin-bottom:40px; text-align:left; padding:20px 0px 20px 20px; }
+.dog-card { text-align:left; border-bottom:1px solid #ddd; line-height:40px; padding:0px 0px 0px 15px;  }
+.dog-card h3 { font-size:14px; }
+
+.dogdict-search { width:100%; height:500px; display:flex; flex-direction: column; justify-content:center;   }
+.dogdict-search h2 { font-size:15px; } 
+.dogdict-search fieldset { margin:0; padding:0;  }
+.dogdict-search input.keysearch { width:90%; height:55px; border-radius:30px; margin-top:20px; border:1px solid #ddd; box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+padding:0px 0px 0px 25px; margin-left:auto; margin-right:auto; }
+.dogdict-search button { position:absolute; right:45px; margin-top:35px; font-size:20px; cursor:pointer; }
+.dogdict-search .popular { display:block; margin-top:0px; width:95%; margin-left:auto; margin-right:auto; margin-top:40px; }
+.dogdict-search .popular ul { display:flex; flex-wrap: wrap; justify-content: center; align-items: center; gap:10px;  }
+.dogdict-search h2.popular-text { font-size:14px; margin-right:10px; padding-top:0px; }
+.dogdict-search .popular span { border:1px solid #5b9efe; padding:8px 15px; border-radius:35px; cursor:pointer; white-space: nowrap; }
+
+.copyright { border-top:1px solid #ddd; background:#fff; font-size:12px; text-align:center; padding-top:30px; padding-bottom:30px; }
+
+/* 페이지네이션 */
+div.navigation { width:100%; margin-top:50px; margin-bottom:50px; display:flex; justify-content:center; }
+div.navigation div.inner { display:flex; align-items:center; }
+div.navigation div.inner > * { display:flex; align-items:center; justify-content:center; height:25px; min-width:25px; padding:0 8px; font-size:14px; background-color:#fff; color:#333; }
+div.navigation div.inner > span[aria-current="page"] { padding:0; margin-right:3px; }
+div.navigation svg { width:16px; height:16px; }
+div.navigation span[aria-current="page"] > span { display:flex; align-items:center; justify-content:center; width:100%; height:100%; background-color:#0b57d0; color:#fff; font-weight:500; border-radius:50%;  }
+
+}
