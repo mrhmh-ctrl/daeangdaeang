@@ -1,0 +1,48 @@
+@charset "utf-8";
+html {overflow-y:scroll}
+body {margin:0;padding:0;font-size:0.75em;font-family:'Malgun Gothic', dotum, sans-serif;background:#fff}
+body.login {margin:0;padding:0;font-size:0.75em;font-family:'Malgun Gothic', dotum, sans-serif;background:#333}
+a {color:#000;text-decoration:none}
+*, :after, :before {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+input[type=text],input[type=password], textarea {
+outline:none;
+}
+legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+fieldset { border:0; }
+li { list-style:none; margin:0; padding:0; border:0;  }
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0; border:0; }
+
+.admin-login-wrap { display:flex; width:100%; height:800px; align-items: center;  }
+.admin-login-wrap fieldset { margin:0; padding:0; }
+.admin-login-wrap h1 { font-size:15px; width:100%; height:40px; display:flex; align-items:center; margin-bottom:10px; }
+.admin-login-form { background:#fff; border-radius:20px; width:20%; height:265px; margin-left:auto; margin-right:auto; display:flex; flex-direction: column; padding:30px; } 
+#login .form-group { height:45px; line-height:30px; }
+#login .form-group input.login-form { width:100%; height:35px; border:1px solid #ddd; }
+#login .form-group input.login-form:focus { outline:none; }
+#login .btn-login { width:100%; height:40px; background:#3a8afd; border:0; color:#fff; font-size:16px; }
+
+.admin-header { display:flex; align-items: center; height:80px; border-bottom:1px solid #ececec; }
+.admin-header .logo { width:350px; text-align:center; }
+.admin-header .logo h1 {  }
+.admin-header .top-menu { width:100%; display:flex; }
+.admin-header .top-menu ul { display:flex; justify-content: space-between; gap:20px; }
+.admin-header .top-menu ul.align-left { width:22%; }
+.admin-header .top-menu ul.align-right { width:75%; display:flex; justify-content:flex-end; }
+.admin-header .top-menu li { font-size:15px; margin-right:30px; }
+
+nav { width:300px; height:1000px; background:#162850; border-radius:0px 40px 40px 0px; padding:30px 0px 0px 0px; }
+nav li { color:#fff; font-size:14px; padding:25px 0px 25px 30px; }
+
+#container { width:100%; }
+#container .container-left { display:flex; }
+#container .container-right { display:flex; width:1200px; padding:50px; }
+.admin-log { width:400px; height:150px; box-shadow: 4px 4px 14px 3px rgba(225, 233, 239, 0.8); margin-top:30px; border-radius:30px;
+padding:30px 0px 0px 30px; }
+.admin-log h2 { font-size:18px; margin-bottom:10px; } 
+.admin-log li { line-height:18px; } 
+.admin-log li span.admin-lastcdate { font-size:11px; }
+.copyright { text-align:center; padding-top:20px; }

@@ -1,0 +1,21 @@
+/* roest */ 
+@charset "utf-8";
+html {overflow-y:scroll}
+body {margin:0;padding:0;font-size:0.75em;font-family:'Malgun Gothic', dotum, sans-serif;background:#fff}
+a {color:#000;text-decoration:none}
+*, :after, :before {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+input[type=text],input[type=password], textarea {
+outline:none;
+}
+legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+fieldset { border:0; }
+li { list-style:none; margin:0; padding:0; border:0;  }
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0; border:0; }
+/* 공사중페이지 */ 
+.construction { text-align:center; margin-top:50px; }
+.construction img { width:300px; height:300px; }
+footer p.copyright { text-align:center; font-size:13px; margin-top:50px; }
