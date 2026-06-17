@@ -8,20 +8,20 @@
         @endif
 
         <fieldset>
-            <form action="{{ route('login.post') }}" method="POST" autocomplete="off">
+            <form action="{{ route('login.post') }}" method="POST" autocomplete="off" id="loginForm" onsubmit="return validateLogin()">
                 @csrf
                 <div class="login-field">
 
                     @if($login_type === 'id')
                         <label>아이디</label>
-                        <input class="login-hp" name="user_id" value="{{ old('user_id') }}" placeholder="아이디 입력">
+                        <input class="login-hp" name="user_id" id="user_id" value="{{ old('user_id') }}" placeholder="아이디 입력">
                     @else
                         <label>이메일</label>
-                        <input class="login-hp" name="email" value="{{ old('email') }}" placeholder="이메일 입력">
+                        <input class="login-hp" name="email" id="email" value="{{ old('email') }}" placeholder="이메일 입력">
                     @endif
 
                     <label style="margin-top:10px;">비밀번호</label>
-                    <input type="password" class="login-hp" name="password" placeholder="비밀번호 입력">
+                    <input type="password" class="login-hp" name="password" id="password" placeholder="비밀번호 입력">
 
                     <input type="submit" class="login-btn" value="로그인">
                     <h2>또는</h2>
@@ -37,4 +37,33 @@
         </fieldset>
     </div>
 </div>
+
+<script>
+function validateLogin() {
+    @if($login_type === 'id')
+        const idVal = document.getElementById('user_id').value.trim();
+        if (idVal === '') {
+            alert('아이디를 입력해주세요.');
+            document.getElementById('user_id').focus();
+            return false;
+        }
+    @else
+        const emailVal = document.getElementById('email').value.trim();
+        if (emailVal === '') {
+            alert('이메일을 입력해주세요.');
+            document.getElementById('email').focus();
+            return false;
+        }
+    @endif
+
+    const pwVal = document.getElementById('password').value.trim();
+    if (pwVal === '') {
+        alert('비밀번호를 입력해주세요.');
+        document.getElementById('password').focus();
+        return false;
+    }
+
+    return true;
+}
+</script>
 @include('inc.member_footer')

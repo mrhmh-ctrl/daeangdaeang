@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>댕댕닷컴 관리자</title>
+<title>관리자</title>
 <link rel="stylesheet" href="{{ asset('css/admin.css') }}?ver=<?php echo time(); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" 
@@ -23,15 +23,16 @@
         <ul class="align-left">
             <li class="has-dropdown"><a href="{{ url('/admin/config') }}">환경설정</a>
             <ul class="dropdown-menu">
-                <li><a href="">SEO관리</a></li>
-                <li><a href="">권한관리</a></li>
-                <li><a href="">SNS관리</a></li>                                    
+                <li><a href="{{ url('/admin/seo_config') }}">SEO관리</a></li>
+                <li><a href="{{ url('/admin/auth_config') }}">권한관리</a></li>
+                <li><a href="{{ url('/admin/sns_config') }}">SNS관리</a></li>                                    
             </ul>
         </li>
             <li class="has-dropdown">
                 <a href="{{ url('/admin/member') }}">회원 관리</a>
                 <ul class="dropdown-menu">
-                    <li><a href="">회원추가</a></li>
+                    <li><a href="{{ route('admin.member.create') }}">회원추가</a></li>
+                    <li><a href="{{ url('/admin/pet') }}">등록반려견현황</a></li>                    
                     <li><a href="">접속기록확인</a></li>                    
                 </ul>
             </li>
@@ -40,8 +41,8 @@
                 <ul class="dropdown-menu">
                     <li><a href="{{ url('/admin/company/info') }}">회사정보</a></li>
                     <li><a href="{{ url('/admin/company/org') }}">조직도관리</a></li>
-                    <li><a href="{{ url('/admin/company/manage') }}">직원관리</a></li>
-                    <li><a href="{{ url('/admin/company/manage/register') }}">직원등록</a></li>
+                    <li><a href="{{ url('/admin/company/manager') }}">직원관리</a></li>
+                    <li><a href="{{ url('/admin/company/manager/register') }}">직원등록</a></li>
                     <li><a href="{{ url('/admin/company/attendance') }}">출근관리</a></li>
                     <li><a href="{{ url('/admin/company/masterboard') }}">직원게시판</a></li>
                     <li><a href="{{ url('/admin/company/fs') }}">파일공유</a></li>
@@ -60,7 +61,6 @@
                     <li><a href="">모임관리</a></li>
                     <li><a href="">업체관리</a></li>
                     <li><a href="{{ route('admin.dogdict.index') }}">애견사전관리</a></li>
-                    <li><a href="">등록반려견현황</a></li>                    
                 </ul>       
             </li>
             <li><a href="{{ url('/admin/goods_manage') }}">상품 관리</a></li>
@@ -68,7 +68,7 @@
        </ul>
         <ul class="align-right">
             <li class="home"><a href="{{ url('/') }}" target="_blank">HOME</a></li>
-            <li><a href="{{ url('/admin/manager_register') }}">직원등록</a></li>
+            <li><a href="{{ url('/admin/company/manager/register') }}">직원등록</a></li>
             <li class="logout"><a href="{{ route('admin.logout') }}">로그아웃</a></li>
         </ul>
     </div>

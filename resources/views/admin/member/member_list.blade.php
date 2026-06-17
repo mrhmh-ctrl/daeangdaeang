@@ -107,8 +107,7 @@
                                 @if($login_type === 'id')                              
                                 <td>{{ $member->email }}</td>                                
                                 @endif                                                                                               
-                                <td>{{ $member->hp ?? '-' }}</td>
-                                <td>LV.{{ $member->level }}</td>
+                                <td>{{ $member->hp ? preg_replace('/(\d{3})(\d{3,4})(\d{4})/', '$1-$2-$3', $member->hp) : '-' }}</td>                                <td>LV.{{ $member->level }}</td>
                                 <td>{{ $member->social_type ? strtoupper($member->social_type) : '-' }}</td>
                                 <td>{{ number_format($member->posts_count ?? 0) }}</td>
                                 <td>

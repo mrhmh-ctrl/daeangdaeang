@@ -1,13 +1,21 @@
 <!-- head start -->
 <meta charset="UTF-8">
+<meta name="robots" content="{{ $seo_robots }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="Author" content="댕댕닷컴">
-<meta name="Keywords" content="반려견정보,반려용품,업체정보,중고거래,생활정보,커뮤니티">
-<meta name="Description" content="반려견 커뮤니티 댕댕닷컴">
-<title>댕댕닷컴 - 반려견 커뮤니티</title>
+<meta name="description" content="{{ $seo_meta_description }}">
+<meta name="keywords" content="{{ $seo_meta_keywords }}">
+<link rel="canonical" href="{{ $seo_canonical_url }}">
+<title>{{ $seo_meta_title ?: $site_name }}</title>
+<!-- OG -->
+<meta property="og:type"        content="website">
+<meta property="og:title"       content="{{ $seo_og_title ?: $seo_meta_title ?: $site_name }}">
+<meta property="og:description" content="{{ $seo_og_description ?: $seo_meta_description }}">
+<meta property="og:image"       content="{{ $seo_og_image }}">
+<meta property="og:url"         content="{{ $seo_canonical_url }}">
 <!-- favicon -->
-<link rel="icon" href="{{ asset('favicon.ico') }}?ver=<?php echo time(); ?>" type="image/x-icon">
+<link rel="icon" href="{{ $seo_favicon ?: asset('favicon.ico') }}?ver=<?php echo time(); ?>" type="image/x-icon">
 <!-- cdn css -->
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css">

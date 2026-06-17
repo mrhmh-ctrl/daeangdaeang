@@ -47,9 +47,9 @@
                         <tr>
                             <th>사이트 주소 <span class="required">*</span></th>
                             <td>
-                                <input type="text" name="site_name"
-                                    value="{{ old('site_url', $configs['site_url']->config_value ?? '') }}"
-                                    placeholder="사이트주소 입력">
+                            <input type="text" name="site_url"
+                            value="{{ old('site_url', $configs['site_url']->config_value ?? '') }}"
+                            placeholder="https://example.com">
                                 <span style="font-size:12px; color:#999; margin-left:8px;"></span>
                             </td>
                         </tr>
@@ -76,12 +76,22 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>세션유지시간</th>
+                            <th>세션유지시간 (관리자)</th>
                             <td>
-                               <input type="text" name="login_session_time" style="width:50px;">
-                               초
+                            <input type="text" name="login_session_time_admin" 
+                            value="{{ old('login_session_time_admin', $configs['login_session_time_admin']->config_value ?? '7200') }}" 
+                            style="width:80px;"> 초
                             </td>
                         </tr>
+                        <tr>
+                            <th>세션유지시간 (사용자)</th>
+                            <td>
+                            <input type="text" name="login_session_time_user" 
+                            value="{{ old('login_session_time_user', $configs['login_session_time_user']->config_value ?? '3600') }}" 
+                            style="width:80px;">
+                               초
+                            </td>
+                        </tr>                        
                     </table>
 
                     <div class="form-buttons">
