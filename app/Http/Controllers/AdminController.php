@@ -37,7 +37,7 @@ class AdminController extends Controller
 
         // 로그인 실패 시 메시지와 함께 뒤로가기
         return back()->withErrors([
-            'email' => '아이디 또는 비밀번호가 일치하지 않아.',
+            'email' => '아이디 또는 비밀번호가 일치하지 않습니다.',
         ]);
     }
 
