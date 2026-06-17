@@ -182,7 +182,7 @@ nav p { font-size:12px; margin-top:10px; font-weight:400; }
 #login_wrap .login-field label { margin-top:30px; font-size:14px; font-weight:700; }
 #login_wrap .login-field input { height:45px; border:1px solid #ccc; border-radius:10px;  }
 #login_wrap .login-field input.login-hp { padding-left:10px; }
-#login_wrap .login-field .login-btn { border:0; border-radius:10px; background:#aa7736; color:#fff; font-size:16px; }
+#login_wrap .login-field .login-btn { border:0; border-radius:10px; background:#aa7736; color:#fff; font-size:16px; cursor:pointer; }
 #login_wrap .login-field .etc-btn { border:0; border-radius:10px; background:#fff; color:#111; border:1px solid #ccc; font-size:16px; }
 #login_wrap .member-field { display:flex; justify-content: space-between;  }
 #login_wrap .member-field p { display:flex; width:70%; font-size:14px; } 
@@ -235,6 +235,9 @@ nav p { font-size:12px; margin-top:10px; font-weight:400; }
 #register-joinform-wrap .next_btn { display:flex; justify-content: center; width: 100%; margin-top: 28px; padding: 16px; background: #aa7736; color: #fff; cursor: pointer; 
 border: none; border-radius: 8px; font-size: 16px; font-weight: 500; color: #fff; cursor: pointer; transition: background .2s, color .2s; }
 
+#register-joincomplete-wrap { margin-left:auto; margin-right:auto; max-width: 390px; background: #fff; padding: 24px 20px 32px; }
+#register-joincomplete-wrap .register-complete-message { background:#f0f0f0; margin:30px 0; padding:30px; }
+#register-joincomplete-wrap .next_btn { display: block; width: 100%; margin-top: 28px; padding: 16px; background: #aa7736; color:#fff; border: none; border-radius: 8px; font-size: 16px; font-weight: 500; color: #fff; cursor:pointer; transition: background .2s, color .2s; text-align:center; }
 footer { width:1240px; margin-left:auto; margin-right:auto; border-top:1px solid #eee; margin-top:50px; clear:both; }
 footer em { font-style:normal; margin:0; padding:0; position:relative; top:-1px; } 
 footer .footer-container { display:flex; margin-top:0px; font-size:14px; }
@@ -315,7 +318,7 @@ nav p { font-size:12px; margin-top:10px; font-weight:400; }
 #login_wrap .login-field label { margin-top:30px; font-size:14px; font-weight:700; }
 #login_wrap .login-field input { height:45px; border:1px solid #ccc; border-radius:10px; }
 #login_wrap .login-field input.login-hp { padding-left:10px; }
-#login_wrap .login-field .login-btn { border:0; border-radius:10px; background:#aa7736; color:#fff; font-size:16px; }
+#login_wrap .login-field .login-btn { border:0; border-radius:10px; background:#aa7736; color:#fff; font-size:16px; cursor:pointer; }
 #login_wrap .login-field .etc-btn { border:0; border-radius:10px; background:#fff; color:#111; border:1px solid #ccc; font-size:16px; }
 #login_wrap .member-field { display:flex; justify-content: space-between; }
 #login_wrap .member-field p { display:flex; width:70%; font-size:12px; }
@@ -366,7 +369,10 @@ nav p { font-size:12px; margin-top:10px; font-weight:400; }
 #register-joinform-wrap .dog-form-group .register-request-item { margin-bottom: 12px; }
 #register-joinform-wrap .step { font-size: 14px; color: #999; margin-bottom: 12px; background:#efefef; width:35px; height:25px; border-radius:10px; line-height:25px; text-align:center; }
 #register-joinform-wrap .next_btn { display:flex; justify-content: center; width: 100%; margin-top: 28px; padding: 16px; background: #aa7736; color: #fff; cursor: pointer; border: none; border-radius: 8px; font-size: 16px; font-weight: 500; transition: background .2s, color .2s; }
- 
+#register-joincomplete-wrap { margin-left:auto; margin-right:auto; max-width: 390px; background: #fff; padding: 24px 20px 32px; }
+#register-joincomplete-wrap .register-complete-message { background:#f0f0f0; margin:30px 0; padding:30px; }
+#register-joincomplete-wrap .next_btn { display: block; width: 100%; margin-top: 28px; padding: 16px; background: #aa7736; color:#fff; border: none; border-radius: 8px; font-size: 16px; font-weight: 500; color: #fff; cursor:pointer; transition: background .2s, color .2s; text-align:center; } 
+
 footer { width:1240px; margin-left:auto; margin-right:auto; margin-top:50px; clear:both; }
 footer em { font-style:normal; margin:0; padding:0; position:relative; top:0px; font-weight:200; }
 footer .footer-container { display:flex; margin-top:20px; font-size:14px; }
