@@ -194,8 +194,12 @@ class MemberController extends Controller
                 ]);
             }
         }
-
+        // 175번째 줄
         Session::forget('register_data');
+        // ↓ 아래 3줄 추가
+        Session::flash('registered_email',      $data['email']);
+        Session::flash('registered_user_id',    $data['user_id'] ?? '');
+        Session::flash('registered_login_type', $this->getLoginType());
 
         return redirect('/register_complete');
     }
